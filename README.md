@@ -1,7 +1,7 @@
 # the Daily Sales Record of a Store
 
 This project is a Python-based application designed to automate the daily sales record of a store.  
-It provides a simple command-line interface (CLI) where users can manage inventory, track products, and export data for reporting.
+It provides a simple command-line interface  where users can manage inventory, track products, and export data for reporting.
 
 ## Features
 
