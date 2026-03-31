@@ -13,30 +13,33 @@ continue_program = "yes"
 def input_int(message):
     """
     This function asks the user for an integer and validates the input.
-    If the user types something that is not an integer, the program shows
-    an error message and asks again until a valid integer is entered.
     """
-    while True:
+    valid = False
+
+    while not valid:
         try:
             number = int(input(message))
-            return number
+            valid = True
         except ValueError:
             print("Please enter a valid integer.")
+
+    return number
 
 
 def input_float(message):
     """
     This function asks the user for a decimal number (float) and validates the input.
-    If the user types an invalid value, the program shows an error message and
-    repeats the request until a valid number is entered.
     """
-    while True:
+    valid = False
+
+    while not valid:
         try:
             number = float(input(message))
-            return number
+            valid = True
         except ValueError:
             print("Please enter a valid number.")
 
+    return number
 
 # Main menu loop
 while continue_program == "yes":
